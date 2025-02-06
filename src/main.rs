@@ -1,6 +1,7 @@
 use std::env::consts::OS;
 
-fn main() {
+#[tokio::main]
+async fn main() {
     if OS != "linux" {
         panic!("This program is only available on Linux");
     }
